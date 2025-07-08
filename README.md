@@ -1,34 +1,39 @@
-Aayush Sharma Portfolio
+# Aayush Sharma Portfolio
 A modern, responsive portfolio website showcasing Aayush Sharma's skills, projects, and contact information. Built with React.js, Tailwind CSS, and Framer Motion.
-Features
 
-Light/dark theme toggle with localStorage persistence
-Smooth scrolling with creative animations
-Custom animated cursor
-Responsive design for mobile, tablet, and desktop
-Contact form with EmailJS integration
-GitHub API integration for live repository data
-PWA support for offline access
-SEO optimization with meta tags
+## Features
 
-Setup
+- Light/dark theme toggle with localStorage persistence
+- Smooth scrolling with creative animations
+- Custom animated cursor
+- Responsive design for mobile, tablet, and desktop
+- Contact form with EmailJS integration
+- GitHub API integration for live repository data
+- PWA support for offline access
+- SEO optimization with meta tags
 
+## Setup
+```
 Clone the repository:git clone <repository-url>
 cd portfolio
+```
 
+Install dependencies:
+```
+npm install
+```
 
-Install dependencies:npm install
+Run the development server:
+```
+npm run dev
+```
 
+Build for production:
+```
+npm run build
+```
 
-Configure EmailJS in /src/utils/api.js with your service ID, template ID, and user ID.
-Add placeholder assets in /public and /src/assets/images.
-Run the development server:npm run dev
-
-
-Build for production:npm run build
-
-
-Deploy to Vercel or Netlify.
+Deploy to Vercel.
 ```
 Folder Structure
 portfolio/
