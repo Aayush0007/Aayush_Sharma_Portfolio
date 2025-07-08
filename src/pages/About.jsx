@@ -137,10 +137,25 @@ const About = () => {
         >
           Skills
         </motion.h3>
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6 sm:gap-8 mb-12">
-          {skills.map((skill, index) => (
-            <SkillCard key={index} {...skill} index={index} />
-          ))}
+        <div className="relative overflow-hidden mb-12">
+          <div
+            className="flex animate-scroll whitespace-nowrap"
+            style={{
+              maskImage: 'linear-gradient(to right, transparent 0%, white 10%, white 90%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, white 10%, white 90%, transparent 100%)',
+            }}
+          >
+            {[...skills, ...skills].map((skill, index) => (
+              <SkillCard
+                key={`${skill.name}-${index}`}
+                icon={skill.icon}
+                name={skill.name}
+                description={skill.description}
+                proficiency={skill.proficiency}
+                index={index}
+              />
+            ))}
+          </div>
         </div>
         <motion.h3
           id="timeline"
