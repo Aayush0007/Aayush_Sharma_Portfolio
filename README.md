@@ -29,7 +29,7 @@ Build for production:npm run build
 
 
 Deploy to Vercel or Netlify.
-
+```
 Folder Structure
 portfolio/
 ├── public/
@@ -70,6 +70,6 @@ portfolio/
 ├── tailwind.config.js
 ├── vite.config.js
 ├── README.md
-
+```
 License
 MIT License
