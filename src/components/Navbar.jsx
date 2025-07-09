@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Logo from '../assets/Logo.png';
 
 const Navbar = ({ theme, setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +84,7 @@ const Navbar = ({ theme, setTheme }) => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <motion.img
-              src="/src/assets/Logo.png"
+              src={Logo}
               alt="Aayush Sharma"
               className="w-10 h-10 rounded-full object-cover ring-2 ring-blue-500 dark:ring-teal-300 cursor-pointer"
               whileHover={{ scale: 1.2, rotate: 5 }}
