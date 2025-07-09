@@ -1,0 +1,153 @@
+{
+  "projects": [
+    {
+      "title": "FlowHive CRM",
+      "description": "AI-powered CRM with lead management, email assistant, and analytics dashboards.",
+      "techStack": ["React.js", "Node.js", "Supabase", "PostgreSQL"],
+      "githubLink": "https://github.com/Aayush0007",
+      "liveLink": "",
+      "keywords": ["CRM", "AI", "lead management", "email assistant", "analytics"]
+    },
+    {
+      "title": "AI-Powered Marketing Website",
+      "description": "Full-stack website with smart CTA flows, lead automation, and custom chatbot.",
+      "techStack": ["React.js", "Node.js", "PostgreSQL", "Docker"],
+      "githubLink": "",
+      "liveLink": "https://marketingbirbal.com",
+      "keywords": ["marketing", "chatbot", "automation", "CTA"]
+    },
+    {
+      "title": "TheLoyalGame Chatbot",
+      "description": "Loyalty-based discount chatbot with RESTful APIs and 99% transaction accuracy.",
+      "techStack": ["Rust", "WebAssembly", "Redis", "JavaScript"],
+      "githubLink": "https://github.com/Aayush0007/TheLoyalGame-Chatbot",
+      "liveLink": "",
+      "keywords": ["chatbot", "loyalty", "APIs", "Rust"]
+    },
+    {
+      "title": "DZI Viewer",
+      "description": "Containerized deep-zoom image generator and viewer with 99% uptime.",
+      "techStack": ["React.js", "Node.js", "PostgreSQL", "Docker"],
+      "githubLink": "https://github.com/Aayush0007/DZI-Viewer-Deep-Zoom-Image-Generator-and-Viewer",
+      "liveLink": "",
+      "keywords": ["deep-zoom", "image viewer", "Docker"]
+    },
+    {
+      "title": "Online Examination System",
+      "description": "Advanced examination portal with real-time test-taking and automated grading.",
+      "techStack": ["React.js", "Spring Boot", "MySQL"],
+      "githubLink": "https://github.com/Aayush0007/Final-year-Project",
+      "liveLink": "",
+      "keywords": ["examination", "portal", "grading"]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer Intern - SauPy Software Systems",
+      "date": "Jan 2025 – Present",
+      "description": "Architected a scalable image sharing platform, reducing deployment time by 40% using Docker.",
+      "keywords": ["software engineer", "Docker", "image sharing", "SauPy"]
+    },
+    {
+      "title": "Freelance Developer - MarketingBirbal",
+      "date": "Dec 2024 – Present",
+      "description": "Developed an AI-powered marketing website, reducing manual effort by 30% with automation.",
+      "keywords": ["freelance", "AI", "marketing", "automation"]
+    },
+    {
+      "title": "Cloud Solutions Architect (Simulation) - Forage",
+      "date": "Dec 2024",
+      "description": "Designed cost-effective AWS Elastic Beanstalk architecture, reducing downtime by 25%.",
+      "keywords": ["cloud", "AWS", "Elastic Beanstalk", "Forage"]
+    },
+    {
+      "title": "Frontend Developer Intern - AICTE & IBM SkillsBuild",
+      "date": "Jun 2023 – Jul 2023",
+      "description": "Built a Netflix-inspired frontend, improving load times by 20% with Redux.",
+      "keywords": ["frontend", "React", "Redux", "IBM"]
+    },
+    {
+      "title": "Android Developer Intern - Internshala",
+      "date": "Jul 2022 – Sep 2022",
+      "description": "Developed two Android apps with real-time tracking, achieving 100+ downloads.",
+      "keywords": ["Android", "apps", "tracking", "Internshala"]
+    },
+    {
+      "title": "B.Tech in Computer Science & Engineering",
+      "date": "Dec 2020 – Jun 2024",
+      "description": "Swami Keshvanand Institute of Technology, Jaipur (CGPA: 9.01, Top 5%).",
+      "keywords": ["B.Tech", "computer science", "Jaipur", "education"]
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Building Scalable Web Apps with React and Node.js",
+      "category": "Tech",
+      "excerpt": "Exploring how to create high-performance web applications using React and Node.js, with tips on scalability and best practices.",
+      "content": "React and Node.js form a powerful combo for building fast, modular, and maintainable web apps. Key steps include project setup with Vite and Express, RESTful API design, state management with Redux Toolkit or React Context, scalability with load balancing and Redis caching, and deployment with Docker and AWS.",
+      "keywords": ["React", "Node.js", "scalable", "web apps", "Vite", "Express", "Redux", "Docker", "AWS"]
+    },
+    {
+      "title": "My Journey into Rust: Why It’s My New Favorite Language",
+      "category": "Tech",
+      "excerpt": "A personal take on learning Rust, its benefits for systems programming, and why it’s worth the steep learning curve.",
+      "content": "Rust’s focus on safety and performance makes it ideal for systems programming. It offers memory safety via its ownership model, performance comparable to C++, and a friendly community with great documentation. Tips for beginners include reading *The Rust Book* and starting with small CLI tools.",
+      "keywords": ["Rust", "systems programming", "memory safety", "The Rust Book"]
+    },
+    {
+      "title": "Balancing Work and Life as a Developer",
+      "category": "Personal",
+      "excerpt": "Being a developer is rewarding but intense. Here’s how I maintain work-life balance with mindful strategies.",
+      "content": "Balancing work and life involves time blocking with Notion, taking short breaks every 90 minutes, and using Pomodoro timers. Challenges include avoiding burnout during deadlines. Practical tips include scheduling screen-free hours and talking to peers about stress.",
+      "keywords": ["work-life balance", "developer", "Notion", "Pomodoro", "burnout"]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What services does Aayush offer?",
+      "answer": "Aayush offers full-stack web development, AI-powered solutions, chatbot development, cloud architecture design, and mobile app development. He specializes in React.js, Node.js, Rust, Docker, PostgreSQL, and more.",
+      "keywords": ["services", "web development", "AI", "chatbot", "cloud", "mobile apps"]
+    },
+    {
+      "question": "How can I contact Aayush for a project?",
+      "answer": "You can reach Aayush via the Contact section on his website or email him at aayush@example.com.",
+      "keywords": ["contact", "project", "email"]
+    },
+    {
+      "question": "What is Aayush’s experience with AI?",
+      "answer": "Aayush has developed AI-powered solutions like the FlowHive CRM (with lead management and email assistant) and an AI-powered marketing website with a custom chatbot, plus a loyalty-based discount chatbot with 99% transaction accuracy.",
+      "keywords": ["AI", "experience", "CRM", "chatbot"]
+    },
+    {
+      "question": "Can Aayush build a custom chatbot for my business?",
+      "answer": "Yes, Aayush can build custom chatbots tailored to your business needs, using technologies like JavaScript, Rust, or no-code platforms. See his TheLoyalGame Chatbot project for an example.",
+      "keywords": ["chatbot", "custom", "business", "TheLoyalGame"]
+    },
+    {
+      "question": "What is Aayush’s educational background?",
+      "answer": "Aayush holds a B.Tech in Computer Science & Engineering from Swami Keshvanand Institute of Technology, Jaipur, with a CGPA of 9.01 (Top 5%), completed in June 2024.",
+      "keywords": ["education", "B.Tech", "Jaipur"]
+    },
+    {
+      "question": "Where can I read Aayush’s blog posts?",
+      "answer": "Aayush’s blog posts are available on his website under the Blog section. Topics include scalable web apps, Rust programming, and work-life balance.",
+      "keywords": ["blogs", "posts", "website"]
+    },
+    {
+      "question": "What technologies does Aayush specialize in?",
+      "answer": "Aayush specializes in React.js, Node.js, Rust, WebAssembly, Docker, PostgreSQL, MySQL, Spring Boot, Redis, and AWS, among others.",
+      "keywords": ["technologies", "skills", "React", "Rust", "Docker", "AWS"]
+    }
+  ],
+  "general": {
+    "about": "Aayush Sharma is a software engineer and full-stack developer with expertise in web development, AI, and cloud solutions. He graduated with a B.Tech in Computer Science (CGPA: 9.01) and has worked on projects like AI-powered CRMs, chatbots, and scalable web apps.",
+    "keywords": ["Aayush Sharma", "software engineer", "full-stack", "AI", "cloud"],
+    "funFacts": [
+      "Aayush once debugged a Rust program at 3 AM and found it more fun than a video game! 🦀",
+      "Did you know Aayush built his first Android app before he could legally drive? 📱",
+      "Aayush’s favorite tech stack is React + Node.js because it’s like peanut butter and jelly — perfect together! 🥪",
+      "Aayush swears by Notion for organizing his life, from code snippets to grocery lists! 📝",
+      "Fun fact: Aayush’s FlowHive CRM project was inspired by a late-night coffee binge! ☕"
+    ]
+  }
+}

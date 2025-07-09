@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
 
@@ -123,9 +122,8 @@ const Navbar = ({ theme, setTheme }) => {
                 <span className="absolute inset-0 bg-secondary/20 scale-0 group-hover:scale-150 rounded-full transition-transform duration-300"></span>
               </motion.div>
             ))}
-            <ThemeToggle theme={theme} setTheme={setTheme} />
           </div>
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden tearing flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 dark:text-gray-200 hover:text-secondary"
@@ -172,9 +170,6 @@ const Navbar = ({ theme, setTheme }) => {
                 ></span>
               </motion.div>
             ))}
-            <div className="px-4 py-3">
-              <ThemeToggle theme={theme} setTheme={setTheme} />
-            </div>
           </div>
         </motion.div>
       )}

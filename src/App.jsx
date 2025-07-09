@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import ThemeToggle from './components/ThemeToggle';
+import Chatbot from './components/Chatbot';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -31,7 +33,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="relative">
+    <div className="relative min-h-screen">
       <CustomCursor />
       <Navbar theme={theme} setTheme={setTheme} />
       <main>
@@ -55,6 +57,10 @@ function App() {
         </ErrorBoundary>
       </main>
       <Footer />
+      <div className="fixed bottom-4 left-4 z-50">
+        <ThemeToggle theme={theme} setTheme={setTheme} />
+      </div>
+      <Chatbot theme={theme} />
     </div>
   );
 }
