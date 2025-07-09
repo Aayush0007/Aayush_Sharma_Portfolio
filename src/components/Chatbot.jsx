@@ -33,7 +33,7 @@ const Chatbot = ({ theme }) => {
     setSpeechMessage(messages[Math.floor(Math.random() * messages.length)]);
     const timer = setTimeout(() => {
       setShowSpeechBubble(false);
-    }, 5000);
+    }, 60000);
     return () => clearTimeout(timer);
   }, []);
 

@@ -1,28 +1,51 @@
-import { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
-import Typed from 'typed.js'
-import { FaGithub, FaTwitter, FaLinkedinIn, FaChevronDown } from 'react-icons/fa'
-import ProfileImg from '../assets/profile.jpg';
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import Typed from "typed.js";
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedinIn,
+  FaChevronDown,
+} from "react-icons/fa";
+import ProfileImg from "../assets/profile.jpg";
 const Home = () => {
-  const typedRef = useRef(null)
+  const typedRef = useRef(null);
 
   useEffect(() => {
-    const isMobile = window.innerWidth < 640
-    window.particlesJS('particles-js', {
+    const isMobile = window.innerWidth < 640;
+    window.particlesJS("particles-js", {
       particles: {
-        number: { value: isMobile ? 40 : 80, density: { enable: true, value_area: 1000 } },
-        color: { value: ['#3b82f6', '#10b981', '#f43f5e', '#8b5cf6'] },
-        shape: { type: ['circle', 'triangle', 'star'], polygon: { nb_sides: 5 } },
+        number: {
+          value: isMobile ? 40 : 80,
+          density: { enable: true, value_area: 1000 },
+        },
+        color: { value: ["#3b82f6", "#10b981", "#f43f5e", "#8b5cf6"] },
+        shape: {
+          type: ["circle", "triangle", "star"],
+          polygon: { nb_sides: 5 },
+        },
         opacity: { value: 0.5, random: true },
         size: { value: isMobile ? 2.5 : 3.5, random: true },
-        line_linked: { enable: true, distance: 100, color: '#3b82f6', opacity: 0.2, width: 1 },
-        move: { enable: true, speed: isMobile ? 2 : 4, direction: 'none', random: true, straight: false },
+        line_linked: {
+          enable: true,
+          distance: 100,
+          color: "#3b82f6",
+          opacity: 0.2,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: isMobile ? 2 : 4,
+          direction: "none",
+          random: true,
+          straight: false,
+        },
       },
       interactivity: {
-        detectOn: 'canvas',
+        detectOn: "canvas",
         events: {
-          onHover: { enable: !isMobile, mode: 'grab' },
-          onClick: { enable: true, mode: 'push' },
+          onHover: { enable: !isMobile, mode: "grab" },
+          onClick: { enable: true, mode: "push" },
           resize: true,
         },
         modes: {
@@ -31,51 +54,60 @@ const Home = () => {
         },
       },
       retinaDetect: true,
-    })
+    });
 
-    window.particlesJS('particles-bg', {
+    window.particlesJS("particles-bg", {
       particles: {
-        number: { value: isMobile ? 20 : 40, density: { enable: true, value_area: 1200 } },
-        color: { value: '#ffffff' },
-        shape: { type: 'circle' },
+        number: {
+          value: isMobile ? 20 : 40,
+          density: { enable: true, value_area: 1200 },
+        },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
         opacity: { value: 0.3, random: true },
         size: { value: 1, random: true },
-        move: { enable: true, speed: isMobile ? 1 : 2, direction: 'none', random: true, straight: false },
+        move: {
+          enable: true,
+          speed: isMobile ? 1 : 2,
+          direction: "none",
+          random: true,
+          straight: false,
+        },
       },
-      interactivity: { detectOn: 'canvas', events: { resize: true } },
+      interactivity: { detectOn: "canvas", events: { resize: true } },
       retinaDetect: true,
-    })
+    });
 
     return () => {
-      ['particles-js', 'particles-bg'].forEach((id) => {
-        const el = document.getElementById(id)
+      ["particles-js", "particles-bg"].forEach((id) => {
+        const el = document.getElementById(id);
         if (el && window.pJSDom && window.pJSDom[0]) {
-          window.pJSDom[0].pJS.fn.vendors.destroypJS()
-          window.pJSDom = []
-          el.innerHTML = ''
+          window.pJSDom[0].pJS.fn.vendors.destroypJS();
+          window.pJSDom = [];
+          el.innerHTML = "";
         }
-      })
-    }
-  }, [])
+      });
+    };
+  }, []);
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
       strings: [
-        'Crafting Scalable Apps',
-        'AWS Cloud Architect',
-        'React & Rust Developer',
-        'Innovating with Code',
+        "Crafting Scalable Apps",
+        "AWS Cloud Architect",
+        "React & Rust Developer",
+        "Innovating with Code",
       ],
       typeSpeed: 60,
       backSpeed: 40,
       loop: true,
       backDelay: 1000,
-    })
+    });
 
     return () => {
-      typed.destroy()
-    }
-  }, [])
+      typed.destroy();
+    };
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -84,33 +116,40 @@ const Home = () => {
       y: 0,
       transition: { duration: 1, staggerChildren: 0.2 },
     },
-  }
+  };
 
   const childVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1 },
-  }
+  };
 
   const skillVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 100 } },
-  }
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100 },
+    },
+  };
 
   const scrollToProjects = () => {
-    const projectsSection = document.getElementById('projects')
+    const projectsSection = document.getElementById("projects");
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' })
+      projectsSection.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
-  const skills = ['React', 'Rust', 'AWS', 'Node.js', 'Docker', 'PostgreSQL']
+  const skills = ["React", "Rust", "AWS", "Node.js", "Docker", "PostgreSQL"];
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-gradient-radial from-blue-100 to-teal-100 dark:from-blue-900 dark:to-teal-900 overflow-hidden pt-20 sm:pt-24"
     >
-      <div id="particles-bg" className="absolute inset-0 z-[-2] backdrop-blur-sm"></div>
+      <div
+        id="particles-bg"
+        className="absolute inset-0 z-[-2] backdrop-blur-sm"
+      ></div>
       <div id="particles-js" className="absolute inset-0 z-[-1]"></div>
       <motion.div
         variants={containerVariants}
@@ -125,7 +164,7 @@ const Home = () => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           whileHover={{ scale: 1.1, rotate: 5 }}
-          transition={{ type: 'spring', stiffness: 200, duration: 0.8 }}
+          transition={{ type: "spring", stiffness: 200, duration: 0.8 }}
           variants={childVariants}
         />
         <motion.h1
@@ -143,7 +182,8 @@ const Home = () => {
           className="mt-4 max-w-md sm:max-w-lg md:max-w-xl mx-auto text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-200 font-inter"
           variants={childVariants}
         >
-          Transforming ideas into fast, scalable, and user-centric solutions with cutting-edge technology.
+          Transforming ideas into fast, scalable, and user-centric solutions
+          with cutting-edge technology.
         </motion.p>
         <motion.div
           className="mt-6 flex flex-wrap justify-center gap-3 sm:gap-4"
@@ -155,7 +195,7 @@ const Home = () => {
               className="px-3 py-1 bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm text-sm sm:text-base text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-secondary hover:text-white"
               variants={skillVariants}
               whileHover={{ scale: 1.1, y: -5, rotate: 5 }}
-              transition={{ type: 'spring', stiffness: 300 }}
+              transition={{ type: "spring", stiffness: 300 }}
             >
               {skill}
             </motion.span>
@@ -166,9 +206,12 @@ const Home = () => {
           variants={childVariants}
         >
           {[
-            { href: 'https://github.com/Aayush0007', icon: FaGithub },
-            { href: 'https://linkedin.com/in/aayush-sharma0477502a1', icon: FaLinkedinIn },
-            { href: 'https://x.com/AayushShar001', icon: FaTwitter },
+            { href: "https://github.com/Aayush0007", icon: FaGithub },
+            {
+              href: "https://www.linkedin.com/in/aayush-sharma-0477502a1/",
+              icon: FaLinkedinIn,
+            },
+            { href: "https://x.com/AayushShar001", icon: FaTwitter },
           ].map((link, index) => (
             <motion.a
               key={index}
@@ -179,7 +222,10 @@ const Home = () => {
               transition={{ duration: 0.4 }}
               className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm relative overflow-hidden group"
             >
-              <link.icon size={24} className="text-gray-700 dark:text-gray-300 group-hover:text-secondary z-10" />
+              <link.icon
+                size={24}
+                className="text-gray-700 dark:text-gray-300 group-hover:text-secondary z-10"
+              />
               <span className="absolute inset-0 bg-secondary/20 scale-0 group-hover:scale-150 rounded-full transition-transform duration-300"></span>
             </motion.a>
           ))}
@@ -189,19 +235,26 @@ const Home = () => {
           variants={childVariants}
         >
           <motion.a
-            href="/resume.pdf"
+            href="/Aayush Sharma - Resume.pdf"
             download
             className="px-6 py-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-full shadow-lg hover:shadow-2xl backdrop-blur-sm hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500"
             whileHover={{ scale: 1.1, y: -3 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             Download Resume
           </motion.a>
           <motion.button
             onClick={scrollToProjects}
-            className="px-6 py-3 bg-transparent border-2 border-blue-500 text-blue-500 dark:border-teal-300 dark:text-teal-300 rounded-full hover:bg-blue-500 dark:hover:bg-teal-300 hover:text-white shadow-lg hover:shadow-2xl animate-pulse"
-            whileHover={{ scale: 1.1, y: -3 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+            className="px-6 py-3 bg-transparent border-2 rounded-full text-blue-500 dark:text-teal-300 border-blue-500 dark:border-teal-300 shadow-lg"
+            whileHover={{
+              scale: 1.1,
+              y: -3,
+              backgroundColor: "#3B82F6", // blue-500
+              color: "#ffffff",
+              boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+            }}
+            transition={{ type: "spring", stiffness: 300 }}
+            whileTap={{ scale: 0.95 }}
           >
             View Projects
           </motion.button>
@@ -214,7 +267,11 @@ const Home = () => {
           <FaChevronDown
             size={28}
             className="text-gray-600 dark:text-gray-300 hover:text-secondary cursor-pointer animate-glow"
-            onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+            onClick={() =>
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" })
+            }
           />
         </motion.div>
       </motion.div>
@@ -227,7 +284,7 @@ const Home = () => {
         <path d="M0,100 C360,50 1080,150 1440,100 L1440,100 L0,100 Z" />
       </svg>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

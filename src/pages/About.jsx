@@ -1,13 +1,15 @@
 import { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import Typed from 'typed.js'
 import Timeline from '../components/Timeline'
 import SkillCard from '../components/SkillCard'
-import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaPython, FaJs, FaJava, FaCloud } from 'react-icons/fa'
+import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaPython, FaJs, FaJava, FaCloud, FaGitAlt, FaCode, FaTools, FaCubes, FaCodeBranch, FaServer, FaCogs } from 'react-icons/fa'
+import { SiTypescript, SiRedux, SiTailwindcss, SiMongodb, SiMysql, SiRedis, SiKubernetes, SiRust, SiExpress, SiBootstrap, SiCplusplus } from 'react-icons/si'
 import { timelineItems } from '../utils/constants'
 
 const About = () => {
   const typedRef = useRef(null)
+  const controls = useAnimation()
 
   useEffect(() => {
     const isMobile = window.innerWidth < 640
@@ -59,6 +61,15 @@ const About = () => {
     }
   }, [])
 
+  useEffect(() => {
+    controls.start({
+      x: '-50%',
+      transition: {
+        x: { repeat: Infinity, repeatType: 'loop', duration: 20, ease: 'linear' },
+      },
+    })
+  }, [controls])
+
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -74,14 +85,35 @@ const About = () => {
   }
 
   const skills = [
-    { icon: FaReact, name: 'React', description: 'Building dynamic UIs with React', proficiency: '90%' },
+    { icon: FaReact, name: 'React', description: 'Dynamic UIs with React', proficiency: '90%' },
     { icon: FaNodeJs, name: 'Node.js', description: 'Scalable backend with Node.js', proficiency: '85%' },
     { icon: FaDatabase, name: 'PostgreSQL', description: 'Robust database management', proficiency: '80%' },
     { icon: FaDocker, name: 'Docker', description: 'Containerized deployments', proficiency: '75%' },
-    { icon: FaPython, name: 'Python', description: 'Versatile scripting and automation', proficiency: '70%' },
+    { icon: FaPython, name: 'Python', description: 'Scripting and automation', proficiency: '70%' },
     { icon: FaJs, name: 'JavaScript', description: 'Core web development', proficiency: '90%' },
-    { icon: FaJava, name: 'Java', description: 'Enterprise-level applications', proficiency: '65%' },
-    { icon: FaCloud, name: 'AWS', description: 'Cloud architecture and services', proficiency: '85%' },
+    { icon: FaJava, name: 'Java', description: 'Enterprise applications', proficiency: '65%' },
+    { icon: FaCloud, name: 'AWS', description: 'Cloud architecture', proficiency: '85%' },
+    { icon: SiTypescript, name: 'TypeScript', description: 'Type-safe JavaScript', proficiency: '80%' },
+    { icon: SiRedux, name: 'Redux', description: 'State management for React', proficiency: '75%' },
+    { icon: SiTailwindcss, name: 'Tailwind CSS', description: 'Utility-first CSS framework', proficiency: '80%' },
+    { icon: SiMongodb, name: 'MongoDB', description: 'NoSQL database solutions', proficiency: '70%' },
+    { icon: SiMysql, name: 'MySQL', description: 'Relational database management', proficiency: '70%' },
+    { icon: SiRedis, name: 'Redis', description: 'In-memory data caching', proficiency: '65%' },
+    { icon: FaGitAlt, name: 'Git', description: 'Version control', proficiency: '85%' },
+    { icon: FaCodeBranch, name: 'GitHub Actions', description: 'CI/CD automation', proficiency: '75%' },
+    { icon: FaTools, name: 'Postman', description: 'API testing and development', proficiency: '80%' },
+    { icon: FaCode, name: 'OpenSeadragon', description: 'High-resolution image rendering', proficiency: '70%' },
+    { icon: FaCode, name: 'Jest', description: 'Unit testing framework', proficiency: '75%' },
+    { icon: SiRust, name: 'Rust', description: 'High-performance systems', proficiency: '65%' },
+    { icon: FaCubes, name: 'WebAssembly', description: 'High-performance web apps', proficiency: '60%' },
+    { icon: SiKubernetes, name: 'Kubernetes', description: 'Container orchestration', proficiency: '60%' },
+    { icon: SiExpress, name: 'Express.js', description: 'Fast backend framework', proficiency: '80%' },
+    { icon: SiBootstrap, name: 'Bootstrap', description: 'Responsive CSS framework', proficiency: '75%' },
+    { icon: SiCplusplus, name: 'C++', description: 'Systems programming', proficiency: '65%' },
+    { icon: FaServer, name: 'Keycloak', description: 'Identity and access management', proficiency: '70%' },
+    { icon: FaCogs, name: 'Microservices', description: 'Distributed system architecture', proficiency: '70%' },
+    { icon: FaCodeBranch, name: 'CI/CD', description: 'Continuous integration/deployment', proficiency: '75%' },
+    { icon: FaCogs, name: 'Agile/Scrum', description: 'Iterative development methodology', proficiency: '80%' },
   ]
 
   const scrollToTimeline = () => {
@@ -114,7 +146,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-base sm:text-lg md:text-xl text-center max-w-2xl mx-auto mb-8 text-gray-600 dark:text-gray-200 font-inter"
         >
-          I’m Aayush Sharma, an <span ref={typedRef} className="text-secondary"></span> with expertise in React.js, Node.js, Rust, and AWS. I specialize in delivering high-performance applications with a focus on cloud architecture and DevOps.
+          I’m Aayush Sharma, an <span ref={typedRef} className="text-secondary"></span> with expertise in full-stack development, cloud architecture, and DevOps. Skilled in React.js, Node.js, Rust, WebAssembly, and AWS, I build scalable, high-performance applications.
         </motion.p>
         <motion.button
           variants={childVariants}
@@ -138,8 +170,9 @@ const About = () => {
           Skills
         </motion.h3>
         <div className="relative overflow-hidden mb-12">
-          <div
-            className="flex animate-scroll whitespace-nowrap"
+          <motion.div
+            animate={controls}
+            className="flex whitespace-nowrap"
             style={{
               maskImage: 'linear-gradient(to right, transparent 0%, white 10%, white 90%, transparent 100%)',
               WebkitMaskImage: 'linear-gradient(to right, transparent 0%, white 10%, white 90%, transparent 100%)',
@@ -155,7 +188,7 @@ const About = () => {
                 index={index}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
         <motion.h3
           id="timeline"

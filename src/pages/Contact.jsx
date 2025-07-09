@@ -392,7 +392,7 @@ const Contact = () => {
               </div>
             </div>
             <motion.a
-              href="/resume.pdf"
+              href="/Aayush Sharma - Resume.pdf"
               download
               className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-full shadow-lg hover:shadow-2xl backdrop-blur-sm hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500 text-center"
               whileHover={{ scale: 1.1, y: -3 }}
