@@ -32,7 +32,7 @@ React and Node.js form a powerful combo for building fast, modular, and maintain
 React and Node.js enable developers to build high-performance, user-friendly applications. Up next? WebSocket optimization!
     `,
     image: Blog1,
-    shareUrl: "https://your-site.com/blog/1",
+    shareUrl: "https://aayush-sharma-portfolio-rho.vercel.app//blog/1",
     shareTitle: "Building Scalable Web Apps with React and Node.js",
   },
   {
@@ -62,7 +62,7 @@ I built a task manager CLI tool. Rust’s compiler helped me catch logic errors 
 Rust is now my go-to for building fast, reliable, and safe software. Stay tuned for more Rust-based projects!
     `,
     image: Blog2,
-    shareUrl: "https://your-site.com/blog/2",
+    shareUrl: "https://aayush-sharma-portfolio-rho.vercel.app//blog/2",
     shareTitle: "My Journey into Rust: Why It’s My New Favorite Language",
   },
   {
@@ -91,7 +91,7 @@ Burnout is real, especially during deadlines. Learning to say *no* and protect p
 Work-life balance isn’t a destination — it’s a habit. The key is to stay consistent and be kind to yourself.
     `,
     image: Blog3,
-    shareUrl: "https://your-site.com/blog/3",
+    shareUrl: "https://aayush-sharma-portfolio-rho.vercel.app//blog/3",
     shareTitle: "Balancing Work and Life as a Developer",
   },
 ];

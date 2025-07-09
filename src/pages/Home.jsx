@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js'
 import { FaGithub, FaTwitter, FaLinkedinIn, FaChevronDown } from 'react-icons/fa'
-
+import ProfileImg from '../assets/profile.jpg';
 const Home = () => {
   const typedRef = useRef(null)
 
@@ -119,7 +119,7 @@ const Home = () => {
         className="text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto relative z-10"
       >
         <motion.img
-          src="/src/assets/profile.jpg"
+          src={ProfileImg}
           alt="Aayush Sharma"
           className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto rounded-full mb-6 object-cover shadow-2xl ring-4 ring-gradient-to-r from-blue-500 to-teal-400 animate-glow"
           initial={{ scale: 0.8, opacity: 0 }}

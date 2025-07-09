@@ -1,3 +1,8 @@
+import project1Img from '../assets/project1.jpeg';
+import project2Img from '../assets/project2.jpg';
+import project3Img from '../assets/project3.png';
+import project4Img from '../assets/project4.jpg';
+import project5Img from '../assets/project5.jpg';
 export const projects = [
   {
     title: 'FlowHive CRM',
@@ -5,7 +10,7 @@ export const projects = [
     techStack: ['React.js', 'Node.js', 'Supabase', 'PostgreSQL'],
     githubLink: 'https://github.com/Aayush0007',
     liveLink: '',
-    image: '/src/assets/project1.jpeg',
+    image: project1Img,
   },
   {
     title: 'AI-Powered Marketing Website',
@@ -13,7 +18,7 @@ export const projects = [
     techStack: ['React.js', 'Node.js', 'PostgreSQL', 'Docker'],
     githubLink: '',
     liveLink: 'https://marketingbirbal.com',
-    image: '/src/assets/project2.jpg',
+    image: project2Img,
   },
   {
     title: 'TheLoyalGame Chatbot',
@@ -21,7 +26,7 @@ export const projects = [
     techStack: ['Rust', 'WebAssembly', 'Redis', 'JavaScript'],
     githubLink: 'https://github.com/Aayush0007/TheLoyalGame-Chatbot',
     liveLink: '',
-    image: '/src/assets/project3.png',
+    image: project3Img,
   },
   {
     title: 'DZI Viewer',
@@ -29,7 +34,7 @@ export const projects = [
     techStack: ['React.js', 'Node.js', 'PostgreSQL', 'Docker'],
     githubLink: 'https://github.com/Aayush0007/DZI-Viewer-Deep-Zoom-Image-Generator-and-Viewer',
     liveLink: '',
-    image: '/src/assets/project4.jpg',
+    image: project4Img,
   },
   {
     title: 'Online Examination System',
@@ -37,7 +42,7 @@ export const projects = [
     techStack: ['React.js', 'Spring Boot', 'MySQL'],
     githubLink: 'https://github.com/Aayush0007/Final-year-Project',
     liveLink: '',
-    image: '/src/assets/project5.jpg',
+    image: project5Img,
   },
 ]
 
