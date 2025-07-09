@@ -13,7 +13,7 @@ const Navbar = ({ theme, setTheme }) => {
     { name: 'Home', id: 'home' },
     { name: 'About', id: 'about' },
     { name: 'Projects', id: 'projects' },
-    { name: 'Blog', to: '/#blog' }, // Use 'to' for react-router-dom navigation
+    { name: 'Blog', to: '/#blog' },
     { name: 'Testimonials', id: 'testimonials' },
     { name: 'Contact', id: 'contact' },
   ];
@@ -78,7 +78,7 @@ const Navbar = ({ theme, setTheme }) => {
       variants={navVariants}
       initial="hidden"
       animate="visible"
-      className="fixed w-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-md border-b border-blue-200 dark:border-teal-700 shadow-lg z-50 h-16"
+      className="fixed w-full bg-gradient-to-r from-white/80 to-blue-100/80 dark:from-gray-800/80 dark:to-teal-900/80 md:bg-white/70 md:dark:bg-gray-800/70 md:backdrop-blur-md border-b border-blue-200 dark:border-teal-700 shadow-lg z-50 h-16"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
